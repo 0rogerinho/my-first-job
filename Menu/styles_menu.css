@@ -1,0 +1,129 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --button-header:rgb(16, 137, 255);
+    --box-background: rgb(242, 246, 255);
+    --header-shadow:rgb(212, 212, 212);
+    --border-box:rgb(212, 212, 212);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    display: flex;
+    background-color: var(--button-header);
+    padding-left: 80px;
+    box-shadow: 0px 4px 0px var(--header-shadow) ;
+}
+nav{
+    width: 300px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+    color: white;
+    font-weight: 549;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 549;
+}
+a:hover{
+    color: rgb(211, 235, 255);
+
+}
+article{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 260px));
+    gap: 20px;
+    padding: 0px 80px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 80px ;
+    flex-wrap: wrap;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: none ;
+}
+label{
+    display: block;
+    padding: 2px 8px;
+}
+input{
+    width: 200px;
+    height: 29px;
+    background-color: var(--box-background);
+    padding-left: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: 0.1px solid var(--border-box);
+}
+button{
+    transition: all 0.5s,0.5s;
+}
+button:hover{
+    scale: 105%;
+    cursor: pointer;
+}
+.label_conta{
+    padding-bottom:  3px;
+    padding-left: 0px;
+}
+.label_conta-2{
+    padding-top:  68px;
+    padding-bottom:  3px;
+    padding-left: 0px;
+}
+.button_add-conta, .button_conta-principal, .button_inoperante, .button_operante{
+    width: 100px;
+    color: white;
+    background-color: var(--button-header);
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+}
+.button_conta-principal{
+    margin: 12px 0px;
+}
+.button_inoperante,.button_operante{
+    width: 130px;
+}
+.box{
+    height: 330px;
+    border:1px solid var(--border-box) ;
+    background-color: var(--box-background);
+    border-radius: 5px;
+}
+.button_atulizar{
+    width: 120px;
+    margin: 15px 80px;
+    padding: 5px 0px;
+    background-color: var(--button-header);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+

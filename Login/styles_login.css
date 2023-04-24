@@ -1,0 +1,118 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --fundo-body: rgb(224, 234, 255);
+    --buttom: rgb(16, 137, 255);
+    --box-login:rgb(224, 234, 255) ;
+    --box-shadow:rgb(182, 190, 207) ;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--fundo-body);
+    background-image: url(img/pattern-background-desktop.svg);
+    background-position: right top;
+    background-size:  contain;
+    background-repeat: no-repeat;
+}
+.box_login{
+    width: 80%;
+    min-width: 320px ;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 36px;
+    box-shadow:  5px 5px 0px var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.box_simbolo{
+    width: 115px;
+    height: 50px;
+    margin-top: 20px;
+    background-image: url(img/Simbolo\ login.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box_linha{
+    width: 240px;
+    height: 10px;
+    margin-top: 5px;
+    background-image: url(img/Linha\ para\ login.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+form{
+    width: 250px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+input{
+   width: 180px;
+   height: 35px;
+   border-left: 0px;
+   border-radius: 0px 10px 10px 0px;
+   border: 0px;
+   background-color: var(--box-login);
+   padding-left: 5px ;
+   font-size: 0.7rem;
+}
+input:hover{
+    outline: 0.1px solid rgb(218, 218, 248);
+    border: none;
+}
+.box_username{
+    display: flex;
+    padding-top: 15px;
+    border: 0px;
+}
+.box_username_img, .password_img {
+    width: 40px;
+    height: 35px;
+    border-right: 0px;
+    background-image: url(img/login\ username.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0px 10px;
+}
+.box_password{
+    display: flex;
+    padding-top: 15px;
+    border: 0px;
+}
+.password_img{
+    background-image: url(img/login\ password.svg);
+}
+button{
+    width: 220px;
+    height: 35px;
+    background-color: var(--buttom);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0px;
+    margin-bottom: 20px;
+    transition: all 0.8s,0.8s;
+    box-shadow: 0px 5px 10px rgb(210, 230, 255);
+}
+button:hover{
+    scale: 105%;
+    cursor: pointer;
+}
+
